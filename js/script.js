@@ -1,12 +1,10 @@
 
-// 1. Seleccionamos los elementos HTML
 const generateBtn = document.getElementById("generate-btn");
 const colorCount = document.getElementById("color-count");
 const paletteContainer = document.getElementById("palette-container");
 const feedback = document.getElementById("feedback");
 const lockedColors = [];
 
-// 2. Función para generar un color hexadecimal aleatorio
 function generateRandomColor() {
     const characters = "0123456789ABCDEF";
     let color = "#";
@@ -19,7 +17,6 @@ function generateRandomColor() {
     return color;
 }
 
-// 3. Convertimos HEX a HSL
 function hexToHSL(hex) {
     let r = parseInt(hex.slice(1, 3), 16) / 255;
     let g = parseInt(hex.slice(3, 5), 16) / 255;
@@ -57,27 +54,21 @@ function hexToHSL(hex) {
     return `hsl(${Math.round(h)}, ${Math.round(s * 100)}%, ${Math.round(l * 100)}%)`;
 }
 
-// 4. Escuchamos el clic del botón
 generateBtn.addEventListener("click", function() {
 
-    // Obtenemos la cantidad seleccionada
     const quantity = Number(colorCount.value);
 
-    // Limpiamos la paleta anterior
     paletteContainer.innerHTML = "";
 
-    // Generamos los colores
     for (let i = 0; i < quantity; i++) {
 
         const color = lockedColors[i] || generateRandomColor();
 
-        // Creamos una tarjeta para cada color
         const colorCard = document.createElement("div");
         colorCard.classList.add("color-card");
 
         const hslColor = hexToHSL(color);
 
-        // Mostramos HEX, HSL y botones
         colorCard.innerHTML = `
             <div class="color-preview"
                 style="background-color: ${color}">
@@ -108,7 +99,6 @@ generateBtn.addEventListener("click", function() {
             </button>
         `;
 
-        // 5. Bloquear y desbloquear colores
         const lockBtn = colorCard.querySelector(".lock-btn");
 
         lockBtn.addEventListener("click", function() {
@@ -133,7 +123,6 @@ generateBtn.addEventListener("click", function() {
             }
         });
 
-        // 6. Copiar los colores HEX y HSL
         const copyButtons = colorCard.querySelectorAll(".copy-btn");
 
         copyButtons.forEach(function(button) {
@@ -154,13 +143,10 @@ generateBtn.addEventListener("click", function() {
             });
         });
 
-        // Agregamos la tarjeta a la página
         paletteContainer.appendChild(colorCard);
     }
 
-    // 7. Mostramos un mensaje
     feedback.textContent = "¡Tu nueva paleta está lista!";
 });
 
-// 8. Generamos una paleta al abrir la página
 generateBtn.click();
