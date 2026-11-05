@@ -1,0 +1,41 @@
+<!DOCTYPE htmml>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Colorfly Studio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Colorfly Studio</h1>
+    <p>Tu creactividad comienza con un color.</p>
+</header>
+<main>
+
+    <section>
+        <h2>Generador de paletas</h2>
+        <p>Crea combinaciones de colores aletorias para dar vida a tus ideas </p>
+        <label for="color-count">Cantidad de colores:</label>
+        <select id="color-count">
+            <option value="6">6 colores</option>
+            <option value="8">8 colores</option>
+            <option value="9">9 colores</option>
+        </select>
+        <button id="generate-btn">
+            Generar Paleta
+        </button>
+        <div id="palette-container"></div>
+        <p id="feedback" role="status"></p>
+        
+
+    </section>
+</main>
+<footer>
+    <p>2026 ColorFly Studio. Todos los derechos reservados</p>
+</footer>
+</body>
+
+</html>
