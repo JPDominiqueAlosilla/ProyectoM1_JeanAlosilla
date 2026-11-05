@@ -3,7 +3,7 @@
 **Tu creatividad comienza con un color.**
 
 ## Descripción
-Colorfly Studio es una aplicación web que permite generar paletas de colores aleatorias para ayudar a los usuarios a encontrar combinaciones de colores para sus proyectos creativos.
+Colorfly es una aplicación web que permite generar paletas de colores aleatorias para ayudar a los usuarios a encontrar combinaciones de colores para sus proyectos creativos.
 
 ## Características principales
 
@@ -18,12 +18,12 @@ Colorfly Studio es una aplicación web que permite generar paletas de colores al
 
 - **HTML5:** estructura de la página web.
 - **CSS3:** diseño y estilos visuales.
-- **JavaScript:** generación aleatoria, conversión de colores y funcionalidades interactivas.
+- **JavaScript:** generación aleatoria, conversión de colores y funciones interactivas.
 
 ## Estructura del proyecto
 
 ```text
-colorfly-studio/
+ProyectoM1_JeanAlosilla/
 │
 ├── index.html
 ├── README.md
@@ -37,7 +37,7 @@ colorfly-studio/
 ## Instalación y ejecución
 
 1. Descargar el proyecto.
-2. Abrir la carpeta `colorfly-studio`.
+2. Abrir la carpeta ProyectoM1_JeanAlosilla.
 3. Abrir el archivo `index.html` en un navegador web.
 4. Comenzar a generar paletas de colores
 
@@ -47,5 +47,20 @@ El usuario puede seleccionar la cantidad de colores que desea generar. La aplica
 
 También permite copiar los códigos de color y bloquear aquellos que desea conservar al generar una nueva paleta.
 
+## Decisiones técnicas
+
+- Se utilizó HEX para generar y mostrar los colores.
+- Se implementó una conversión de HEX a HSL para mostrar ambos formatos.
+- Se utilizó JavaScript para generar y mostrar las paletas dinámicamente.
+- Se empleó CSS Grid para organizar las tarjetas de colores.
+
+## Enlaces del proyecto
+
+- **Repositorio GitHub:** https://github.com/JPDominiqueAlosilla/ProyectoM1_JeanAlosilla
+- **Demo en GitHub Pages:** https://jpdominiquealosilla.github.io/ProyectoM1_JeanAlosilla/
+
+## Despliegue
+
+El proyecto se publicó mediante GitHub Pages, utilizando la rama `main` y la carpeta raíz del repositorio.
 
 **Proyecto: Colorfly Studio**
