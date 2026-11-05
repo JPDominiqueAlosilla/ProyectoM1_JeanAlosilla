@@ -64,3 +64,16 @@ También permite copiar los códigos de color y bloquear aquellos que desea cons
 El proyecto se publicó mediante GitHub Pages, utilizando la rama `main` y la carpeta raíz del repositorio.
 
 **Proyecto: Colorfly Studio**
+
+
+## Evidencias visuales
+
+### Generación de colores
+![Generación de colores](./img/generar-colores.gif/Grabación%202026-11-05%20181702captura.gif)
+
+### Copiar códigos de colores
+![Copiar colores](./img/copiar-colores.gif/Grabación%202026-11-05%20182051copia.gif)
+
+### Bloquear colores
+![Bloquear colores](./img/captura-colores-bloqueados.png/Grabación%202026-11-05%20181105.gif)
+
